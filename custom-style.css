@@ -21,7 +21,7 @@ h1{
 }
  h1 .brand{
 	float: left;
-	font-size: 60%;
+	font-size: 50%;
 	font-weight: 300;
 	width: 30%;
 	display: block;
@@ -47,20 +47,24 @@ h1{
 	list-style: none;
 	float: right;
 	margin-right: 5px;
+	/* background-color: rgb(91, 146, 46); */
+	
 }
 
 .site-nav a {
 	display: block;
+	/* color: #ffeed2; */
 	color: #ffeed2;
 	text-decoration: none;
 	padding: 10px 20px;
-	border: 1px solid #ffeed2;
+	/* border: 1px solid #ffeed2; */
 	border-bottom: none;
+	font-size: 18px
 }
 
 .site-nav li:hover > a,
 .site-nav a:hover {
-	background-color: #665539;
+	background-color: rgb(91, 146, 46);
 }
 
 
