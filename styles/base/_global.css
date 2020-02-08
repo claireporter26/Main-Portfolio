@@ -1,0 +1,19 @@
+body, html{
+	/* background-color: #F5F5F5; */
+	/* background-color: #e0e6ef; */
+	background-color: rgba(23, 28, 33, 1);
+	
+	margin-top: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.navContainer{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-bottom: solid .1px #ffeed2;
+	box-sizing: border-box;
+	padding: 10px 30px;
+}

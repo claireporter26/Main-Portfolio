@@ -1,4 +1,6 @@
 
+/* @import url('./base/_global.css'); */
+
 body, html{
 	/* background-color: #F5F5F5; */
 	/* background-color: #e0e6ef; */
@@ -18,7 +20,6 @@ body, html{
 	box-sizing: border-box;
 	padding: 10px 30px;
 }
-
 
 h1{
 	margin: 0;
@@ -183,11 +184,11 @@ h1{
   }
 
   .card-textbox--link{
-	font-size: 120%
+	font-size: 120%;
 	font-weight: 300;
 	margin: 5px;
 	text-decoration: none;
-	color: black;
+	color: rgba(23, 28, 33, 1);
   }
 
   .card-textbox--button {
@@ -200,9 +201,7 @@ h1{
 	border-width: 1px;
 	border-color: rgb(168, 168, 80);
 	padding: 10px;
-	background-color: rgb(91, 146, 46);
-	color: black;
-	
+	background-color: rgba(91, 146, 46, .8);
 	font-weight: bold;
 	font-size: 15px;
 	
@@ -217,14 +216,16 @@ h1{
 	color: black;
 }
 
-.skillsMain, .websitesMain {
+.pageMain{
 	color: #ffeed2;
 	height: 500px;
 	padding: 30px 60px;
 }
 
-.skillsMain h1 {
+.pageMain h1 {
 	padding-bottom: 40px;
+	font-size: 60px;
+	font-weight: 100;
 }
 
 #skill1::before{
@@ -286,6 +287,11 @@ h1{
 	float: left;
 	margin-right: 20px;
    } 
+
+.github-logo {
+	width: 20%;
+	padding: 30px;
+}
 
 footer {
 	padding: 10px 30px;
