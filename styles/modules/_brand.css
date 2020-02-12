@@ -1,0 +1,12 @@
+.brand{
+	float: left;
+	font-size: 50%;
+	font-weight: 300;
+	width: 30%;
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #ffeed2;
+	margin: 0;
+
+}

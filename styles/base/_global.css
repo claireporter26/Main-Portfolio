@@ -1,19 +1,42 @@
 body, html{
-	/* background-color: #F5F5F5; */
-	/* background-color: #e0e6ef; */
 	background-color: rgba(23, 28, 33, 1);
-	
 	margin-top: 0;
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-.navContainer{
+/* Site Navigation */
+
+
+
+/* brand */
+
+h1{
 	margin: 0;
-	padding: 0;
-	width: 100%;
-	border-bottom: solid .1px #ffeed2;
-	box-sizing: border-box;
-	padding: 10px 30px;
 }
+
+
+
+
+
+/* clearfix */
+
+.fix {
+	clear: both;
+}
+
+.group::before,
+.group::after {
+	content: "";
+	display: table;
+}
+
+.group::after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+

@@ -1,0 +1,11 @@
+.pageMain{
+	color: #ffeed2;
+	height: 500px;
+	padding: 30px 60px;
+}
+
+.pageMain h1 {
+	padding-bottom: 40px;
+	font-size: 60px;
+	font-weight: 100;
+}

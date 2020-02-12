@@ -1,0 +1,59 @@
+#skill1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: red;
+    float: left;
+    margin-right: 20px;
+   } 
+   
+#skill2::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: blue;
+    float: left;
+    margin-right: 20px;
+    } 
+
+#skill3::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: green;
+    float: left;
+    margin-right: 20px;
+} 
+
+#skill4::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: orange;
+    float: left;
+    margin-right: 20px;
+} 
+
+#skill5::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: purple;
+    float: left;
+    margin-right: 20px;
+} 

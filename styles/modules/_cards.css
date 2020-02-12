@@ -1,0 +1,80 @@
+.card-area{
+	width: 100%;
+	height: 500px;
+	box-sizing: border-box;
+	/* background-color: rgba(91, 146, 46, 0.5);
+	background-color: #e0e6ef; */
+	margin: 20px;
+	position: absolute;
+}
+
+.card--5 {
+	/* Add shadows to create the "card" effect */
+	position: relative;
+	box-shadow: 8px 4px 8px 0 rgba(255, 238, 210, 0.2);
+	transition: 0.3s;
+	float: left; 
+	width: 40%;
+	margin-right: 50px;
+	margin-left: 60px;
+	top: 20px;
+  }
+
+.card--6 img{
+	width: 40%;
+	height: auto;
+}
+  
+  /* On mouse-over, add a deeper shadow */
+  .card--6:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .card-textbox {
+	padding: 5px;
+	background-color:  white; 
+  }
+
+  .card-textbox--title{
+	font-size: 150%;
+	margin: 5px;
+  }
+
+  .card-textbox--main{
+	font-size: 120%
+	margin: 5px;
+  }
+
+  .card-textbox--link{
+	font-size: 120%;
+	font-weight: 300;
+	margin: 5px;
+	text-decoration: none;
+	color: rgba(23, 28, 33, 1);
+  }
+
+  .card-textbox--button {
+/* 
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(23, 28, 33, .7); */
+
+	border-radius: 10px;
+	border-width: 1px;
+	border-color: rgb(168, 168, 80);
+	padding: 10px;
+	background-color: rgba(91, 146, 46, .8);
+	font-weight: bold;
+	font-size: 15px;
+	
+
+  }
+
+.card-textbox--button:hover {
+	background-color: #e5e9dc;
+}
+
+.card-textbox--link:hover{
+	color: black;
+}
