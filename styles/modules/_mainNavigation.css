@@ -57,6 +57,10 @@
 	background-color: rgb(91, 146, 46);
 }
 
+.active-nav a {
+	font-size: 200%;
+}
+
 footer {
 	padding: 10px 30px;
 	background-color: rgba(23, 28, 33, 1);
