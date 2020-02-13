@@ -6,7 +6,7 @@ body, html{
 	box-sizing: border-box;
 }
 
-/* Site Navigation */
+
 
 
 
@@ -22,7 +22,7 @@ h1{
 
 /* clearfix */
 
-.fix {
+/* .fix {
 	clear: both;
 }
 
@@ -30,13 +30,19 @@ h1{
 .group::after {
 	content: "";
 	display: table;
-}
+} */
 
-.group::after {
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+/* .group::after {
 	clear: both;
 }
 
 .group {
 	zoom: 1;
-}
+} */
 
