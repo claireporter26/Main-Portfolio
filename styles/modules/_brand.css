@@ -1,6 +1,5 @@
 .brand{
 	float: left;
-	/* font-size: 50%; */
 	font-size: 18px;
 	font-weight: 300;
 	max-width: 30%;
@@ -9,6 +8,4 @@
 	padding: 10px 20px;
 	margin-top: 10px;
 	color: #ffeed2;
-	
-
 }

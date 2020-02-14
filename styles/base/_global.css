@@ -12,30 +12,10 @@ h1{
 	margin: 0;
 }
 
-/* clearfix */
-
-/* .fix {
-	clear: both;
-}
-
-.group::before,
-.group::after {
-	content: "";
-	display: table;
-} */
-
-
 .group:after {
 	content: "";
 	display: table;
 	clear: both;
   }
 
-/* .group::after {
-	clear: both;
-}
-
-.group {
-	zoom: 1;
-} */
 
