@@ -1,6 +1,7 @@
 .brand{
 	float: left;
-	font-size: 50%;
+	/* font-size: 50%; */
+	font-size: 18px;
 	font-weight: 300;
 	max-width: 30%;
 	display: block;

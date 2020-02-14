@@ -22,7 +22,8 @@
 }
 
 .site-nav ul {
-	margin: 0 -5px;
+	/* margin: 0 -5px; */
+	margin: 0;
 	padding: 10px;
 	
 }
@@ -40,7 +41,7 @@
 	
 }
 
-.site-nav a {
+.nav-right li a {
 	/* display: block; */
 	/* color: #ffeed2; */
 	color: #ffeed2;
@@ -52,16 +53,26 @@
 	
 }
 
-.site-nav li:hover > a,
-.site-nav a:hover {
+.nav-right li a:hover{
 	background-color: rgb(91, 146, 46);
 }
 
-.active-nav a {
+.active-nav li a {
 	font-size: 200%;
 }
 
 footer {
-	padding: 10px 30px;
+	padding: 5px 30px;
 	background-color: rgba(23, 28, 33, 1);
+	width: 100%;
+	border-top: solid .1px #ffeed2;
+	margin-top: 20px;
+	
+	
+}
+
+footer li {
+	
+	display: inline-block;
+	padding: 5px 15px;
 }
