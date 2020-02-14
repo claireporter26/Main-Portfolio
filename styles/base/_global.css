@@ -6,19 +6,11 @@ body, html{
 	box-sizing: border-box;
 }
 
-
-
-
-
 /* brand */
 
 h1{
 	margin: 0;
 }
-
-
-
-
 
 /* clearfix */
 
@@ -31,6 +23,7 @@ h1{
 	content: "";
 	display: table;
 } */
+
 
 .group:after {
 	content: "";
