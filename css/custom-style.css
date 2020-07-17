@@ -1,4 +1,3 @@
-@import url("./base/_global.scss");
 @import url("./modules/_introBanner.scss");
 @import url("./modules/_brand.scss");
 @import url("./modules/_cards.scss");
@@ -6,4 +5,23 @@
 @import url("./modules/_skillsSection.scss");
 @import url("./modules/_logos.scss");
 @import url("./modules/_mainNavigation.scss");
+body, html {
+  background-color: #171c21;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* brand */
+h1 {
+  margin: 0;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*# sourceMappingURL=custom-style.css.map */
