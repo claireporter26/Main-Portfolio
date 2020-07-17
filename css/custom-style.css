@@ -1,10 +1,3 @@
-@import url("./modules/_introBanner.scss");
-@import url("./modules/_brand.scss");
-@import url("./modules/_cards.scss");
-@import url("./modules/_mainPageContainer.scss");
-@import url("./modules/_skillsSection.scss");
-@import url("./modules/_logos.scss");
-@import url("./modules/_mainNavigation.scss");
 body, html {
   background-color: #171c21;
   margin-top: 0;
@@ -23,5 +16,277 @@ h1 {
   content: "";
   display: table;
   clear: both;
+}
+
+.intro-banner {
+  background-image: url(../../images/mainimage2.jpg);
+  background-color: #e2e28a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  height: 520px;
+  min-height: 350px;
+  position: relative;
+}
+
+.intro-banner--textbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+  text-align: center;
+  padding: 60px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.intro-text {
+  padding: 5px 5px 20px 5px;
+  font-family: sans-serif;
+  font-size: 80%;
+  font-weight: 100;
+  line-height: 1.3;
+  color: #ffeed2;
+  overflow: none;
+  text-align: left;
+}
+
+.intro-banner--button {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #a8a850;
+  padding: 10px;
+  background-color: #5b922e;
+  color: white;
+  float: left;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.brand {
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 30%;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: #ffeed2;
+}
+
+.card-area {
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+}
+
+.flexcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card--5 {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
+          box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 500px;
+  height: auto;
+}
+
+/* On mouse-over, increase card size */
+.card--5:hover {
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
+}
+
+/* Add some padding inside the card container */
+.card-textbox {
+  padding: 5px;
+  background-color: white;
+}
+
+.card-textbox--title {
+  font-size: 150%;
+  margin: 5px;
+}
+
+.card-textbox--main {
+  font-size: 120%;
+  margin: 5px;
+}
+
+.card-textbox--link {
+  font-size: 120%;
+  font-weight: 300;
+  margin: 5px;
+  text-decoration: none;
+  color: #171c21;
+}
+
+.card-textbox--button {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #a8a850;
+  padding: 10px;
+  background-color: rgba(91, 146, 46, 0.8);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.card-textbox--button:hover {
+  background-color: #e5e9dc;
+}
+
+.card-textbox--link:hover {
+  color: black;
+}
+
+.pageMain {
+  color: #ffeed2;
+  height: 500px;
+  padding: 30px 60px;
+}
+
+.pageMain h1 {
+  padding-bottom: 40px;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+#skill1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: red;
+  float: left;
+  margin-right: 20px;
+}
+
+#skill2::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: blue;
+  float: left;
+  margin-right: 20px;
+}
+
+#skill3::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: green;
+  float: left;
+  margin-right: 20px;
+}
+
+#skill4::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: orange;
+  float: left;
+  margin-right: 20px;
+}
+
+#skill5::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: purple;
+  float: left;
+  margin-right: 20px;
+}
+
+.github-logo {
+  width: 20%;
+  padding: 30px;
+}
+
+.navContainer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: solid .1px #ffeed2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 30px;
+}
+
+.site-nav {
+  margin: 0px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-right {
+  float: right;
+}
+
+.site-nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.nav-right li a {
+  color: #ffeed2;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-bottom: none;
+}
+
+.nav-right li a:hover {
+  background-color: #5b922e;
+}
+
+.active-nav a {
+  font-size: 165%;
+}
+
+footer {
+  background-color: #171c21;
+  width: 100%;
+  border-top: solid .1px #ffeed2;
+  margin-top: 20px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 5px 15px;
 }
 /*# sourceMappingURL=custom-style.css.map */
