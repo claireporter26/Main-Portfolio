@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/custom-style.css">
     <title>Claire Porter Web Development Home</title>
@@ -20,6 +21,11 @@
                     <div class="navigationContainer"></div>
                         <nav class="site-nav">
                             <a class="brand" href="index.html">Claire Porter Web Development</a>
+                            
+                            <button class="nav-toggle" aria-label="open navigation">
+                                <span class="hamburger"></span>
+                            </button>
+                            
                             <ul class="nav-right">
                                 <li class="active-nav"><a href="index.html">Home</a></li>
                                 <li><a href="projects.html">Projects</a></li>
@@ -46,7 +52,7 @@
 
             <div class="card-area group fix flexcard">
                 
-                <div class="card--5 group">
+                <div class="card card_skills group">
                     <img src="images/skills.jpg" height="auto" width="100%">
                     <div class="card-textbox">
                         <h4 class="card-textbox--title">My Skills</h4>
@@ -57,7 +63,7 @@
                     </div>
                 </div>
             
-                <div class="card--5 group">
+                <div class="card card_work group">
                     <img src="images/websites.jpg" height="auto" width="100%">
                     <div class="card-textbox">
                         <h4 class="card-textbox--title">My Work</h4>
@@ -75,8 +81,8 @@
         <footer class="group">
             <div>
                 <ul>
-                    <li><a href="#"><img src="images/twitter.png"></a></li>
-                    <li><a href="#"><img src="images/instagram.png"></a></li>
+                    <li class="refer">Cover photo provided by <a href="#">Ben Porter Photography</a></li>
+                    
                 </ul>
             </div>
         </footer>

@@ -1,7 +1,7 @@
 .card-area{
-	width: 100%;
+	width: 90%;
 	height: auto;
-	margin: 50px 0;
+	margin: 50px auto;
 }
 
 .flexcard {
@@ -10,17 +10,23 @@
 	justify-content: space-around;
 }
 
-.card--5 {
+.card {
 	/* Add shadows to create the "card" effect */
 	box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
 	transition: 0.3s;
 	width: 500px;
 	height: auto;
+
+	&_skills {
+		margin-bottom: 1.5em;
+	}
+
   }
 
 
+
   /* On mouse-over, increase card size */
-  .card--5:hover {
+  .card:hover {
 	transform: scale(1.03, 1.03);
   }
   
@@ -31,17 +37,17 @@
   }
 
   .card-textbox--title{
-	font-size: 150%;
+	font-size: 1.3rem;
 	margin: 5px;
   }
 
   .card-textbox--main{
-	font-size: 120%;
+	font-size: 1rem;
 	margin: 5px;
   }
 
   .card-textbox--link{
-	font-size: 120%;
+	font-size: 1rem;
 	font-weight: 300;
 	margin: 5px;
 	text-decoration: none;
@@ -53,7 +59,7 @@
 	border-radius: 10px;
 	border-width: 1px;
 	border-color: rgb(168, 168, 80);
-	padding: 10px;
+	padding: .5em;
 	background-color: rgba(91, 146, 46, .8);
 	font-weight: bold;
 	font-size: 15px;
@@ -62,9 +68,10 @@
   }
 
 .card-textbox--button:hover {
-	background-color: #e5e9dc;
+	background-color: rgba(91, 146, 46, .6);
 }
 
 .card-textbox--link:hover{
 	color: black;
+	
 }
