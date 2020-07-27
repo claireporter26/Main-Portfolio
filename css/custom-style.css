@@ -287,12 +287,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    display: relative;
   }
 }
 
@@ -316,20 +314,18 @@ img {
 }
 
 .nav {
+  visibility: hidden;
   width: 100%;
-  height: auto;
+  height: 0;
   text-align: center;
+  font-size: .9rem;
 }
 
 @media (min-width: 700px) {
   .nav {
-    position: relative;
     visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: right;
     position: absolute;
+    right: 0;
   }
 }
 
@@ -337,23 +333,38 @@ img {
   list-style: none;
   padding: .7em;
   width: 100%;
+  display: block;
 }
 
 @media (min-width: 700px) {
   .site-nav li {
     display: inline-block;
     margin-right: 5px;
+    width: auto;
   }
 }
 
-.nav-right li a {
-  color: #ffeed2;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-bottom: none;
+.nav-right {
+  position: relative;
+  width: 100%;
 }
 
-.nav-right li a:hover {
+.nav li a {
+  color: #ffeed2;
+  text-decoration: none;
+  padding: .2em 1em;
+  border-bottom: none;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .nav li a {
+    width: auto;
+  }
+}
+
+.nav li a:hover {
   background-color: #5b922e;
 }
 
@@ -364,13 +375,19 @@ img {
 /* brand */
 .brand {
   font-size: .8rem;
+  color: rgba(255, 238, 210, 0.5);
   padding: 0;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 @media (min-width: 700px) {
   .brand {
     font-size: 1rem;
-    width: auto;
   }
 }
 
@@ -381,13 +398,16 @@ img {
   height: 3em;
   padding: 0;
   border-radius: 50%;
-  background: #fff;
+  background-color: #ffeed2;
   color: #07282d;
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   position: absolute;
   right: 0;
   z-index: 10;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media (min-width: 700px) {
