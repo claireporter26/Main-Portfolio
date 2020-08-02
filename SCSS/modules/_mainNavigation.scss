@@ -17,6 +17,8 @@
 
 .site-nav {
 	margin: 0px;
+	display: relative;
+	
 	
 
 
@@ -24,7 +26,8 @@
 		display: flex;	
 		// align-items: center;
 		justify-content: space-between;
-		display: relative;
+		
+		
 	}
 
 	&_small {
@@ -53,6 +56,7 @@
 	height: 0;
 	text-align: center;
 	font-size: .9rem;
+	background-color: red;
 
 	@include atLarge {
 		
@@ -86,6 +90,7 @@
 .nav-right {
 	position: relative;
 	width: 100%;
+	background-color: blue;
 }
 
 
@@ -118,9 +123,19 @@
 	font-size: .8rem;
 	color: rgba(255,238,210, .5);
 	padding: 0;
-	flex-grow: 2;
-	width: min-content;
+	width: 100%;
 	
+	
+	
+	
+	// float: left;
+	
+	font-weight: 300;
+	
+	// display: block;
+	text-decoration: none;
+	padding: 10px 0;
+	// margin-top: 10px;
 	
 	
 
@@ -130,12 +145,17 @@
 	}
 }
 
+.brandContainer {
+	display: flex;
+}
+
 .nav-toggle {
     cursor: pointer;
     border: 0;
     width: 3em;
     height: 3em;
-    padding: 0;
+	padding: 0;
+	
     border-radius: 50%;
     background-color: rgb(255,238,210);
     color: #07282d;
@@ -143,7 +163,8 @@
 	position: absolute;
 	right: 0;
 	z-index: 10;
-	flex-grow: 1;
+	
+
 
 	
 

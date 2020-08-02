@@ -15,12 +15,6 @@ img {
   width: 100%;
 }
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
   background-color: #e2e28a;
@@ -92,18 +86,6 @@ img {
     padding: 10px;
     color: white;
   }
-}
-
-.brand {
-  float: left;
-  font-size: 18px;
-  font-weight: 300;
-  max-width: 30%;
-  display: block;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-top: 10px;
-  color: #ffeed2;
 }
 
 .card-area {
@@ -280,6 +262,7 @@ img {
 
 .site-nav {
   margin: 0px;
+  display: relative;
 }
 
 @media (min-width: 700px) {
@@ -290,7 +273,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    display: relative;
   }
 }
 
@@ -319,6 +301,7 @@ img {
   height: 0;
   text-align: center;
   font-size: .9rem;
+  background-color: red;
 }
 
 @media (min-width: 700px) {
@@ -347,6 +330,7 @@ img {
 .nav-right {
   position: relative;
   width: 100%;
+  background-color: blue;
 }
 
 .nav li a {
@@ -377,18 +361,22 @@ img {
   font-size: .8rem;
   color: rgba(255, 238, 210, 0.5);
   padding: 0;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: 100%;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 0;
 }
 
 @media (min-width: 700px) {
   .brand {
     font-size: 1rem;
   }
+}
+
+.brandContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-toggle {
@@ -405,9 +393,6 @@ img {
   position: absolute;
   right: 0;
   z-index: 10;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 @media (min-width: 700px) {
