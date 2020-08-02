@@ -5,11 +5,15 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	border-radius: 5px;
-	margin-bottom: 20px;
+	
 	margin-top: 0px;
 	height: 520px;
 	min-height: 350px;
 	position: relative;
+
+	@include atLarge {
+		margin-bottom: 20px;
+	}
 }
 
 .intro-banner--textbox{

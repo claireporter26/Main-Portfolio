@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 *, *::before, *::after {
@@ -22,11 +22,16 @@ img {
   background-repeat: no-repeat;
   background-position: top center;
   border-radius: 5px;
-  margin-bottom: 20px;
   margin-top: 0px;
   height: 520px;
   min-height: 350px;
   position: relative;
+}
+
+@media (min-width: 700px) {
+  .intro-banner {
+    margin-bottom: 20px;
+  }
 }
 
 .intro-banner--textbox {
@@ -89,9 +94,15 @@ img {
 }
 
 .card-area {
-  width: 90%;
+  width: 95%;
   height: auto;
-  margin: 50px auto;
+  margin: 1.5em auto;
+}
+
+@media (min-width: 700px) {
+  .card-area {
+    margin: 50px auto;
+  }
 }
 
 .flexcard {
@@ -170,14 +181,28 @@ img {
 
 .pageMain {
   color: #ffeed2;
-  height: 500px;
-  padding: 30px 60px;
+  width: 90%;
+  margin: 1.5em auto;
 }
 
-.pageMain h1 {
+@media (min-width: 700px) {
+  .pageMain {
+    height: 500px;
+    padding: 30px 60px;
+  }
+}
+
+.pageMain_header {
   padding-bottom: 40px;
-  font-size: 60px;
-  font-weight: 100;
+  font-size: 2.8rem;
+  font-weight: 200;
+}
+
+@media (min-width: 700px) {
+  .pageMain_header {
+    padding-bottom: 40px;
+    font-size: 60px;
+  }
 }
 
 #skill1::before {
@@ -241,8 +266,8 @@ img {
 }
 
 .github-logo {
-  width: 20%;
-  padding: 30px;
+  width: 12em;
+  padding: .5em;
 }
 
 .navContainer {
@@ -357,8 +382,9 @@ img {
   }
 }
 
-.active-nav a {
-  font-size: 165%;
+.active-nav_link {
+  font-size: 145%;
+  text-decoration: underline;
 }
 
 /* brand */
