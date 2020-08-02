@@ -301,7 +301,6 @@ img {
   height: 0;
   text-align: center;
   font-size: .9rem;
-  background-color: red;
 }
 
 @media (min-width: 700px) {
@@ -330,7 +329,6 @@ img {
 .nav-right {
   position: relative;
   width: 100%;
-  background-color: blue;
 }
 
 .nav li a {
@@ -349,7 +347,14 @@ img {
 }
 
 .nav li a:hover {
-  background-color: #5b922e;
+  background-color: #ffeed2;
+  color: #171c21;
+}
+
+@media (min-width: 700px) {
+  .nav li a:hover {
+    background-color: #5b922e;
+  }
 }
 
 .active-nav a {

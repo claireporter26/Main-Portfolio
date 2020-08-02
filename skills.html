@@ -13,17 +13,26 @@
     <body>
 
         <div class="navContainer">
-            <header class="group">
-                <div class="navigationContainer fix"></div>
-                    <nav class="site-nav">
-                        <a class="brand" href="index.html">Claire Porter Web Development</a>
-                        <ul class="nav-right fix">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li class="active-nav"><a href="skills.html">Skills</a></li>
-                            <li><a href="contactme.html">Contact Me</a></li>
-                        </ul>
-                    </nav> 
+            <header class="group navItems">
+                
+                    <div class="site-nav">
+                        <div class="site-nav_small">
+                            <div class="brandContainer">
+                                <a class="brand" href="index.html">Claire Porter Web Development</a>
+                            </div>
+                            <button class="nav-toggle" aria-label="open navigation">
+                                <span class="hamburger"></span>
+                            </button>
+                        </div>
+                        <nav class="nav">
+                            <ul class="nav-right">
+                                <li></li><a href="index.html">Home</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li class="active-nav"><a href="skills.html">Skills</a></li>
+                                <li><a href="contactme.html">Contact Me</a></li>
+                            </ul>
+                        </nav>
+                    </div> 
                 </div> 
             </header> 
         </div> 
@@ -98,7 +107,7 @@
 </footer>
 
 
-
+<script src="./JS/app.js"></script>
 
 
 </body>
