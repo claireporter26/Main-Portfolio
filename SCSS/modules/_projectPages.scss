@@ -1,5 +1,29 @@
+.project_mainArea {
+    @include atLarge {
+        display: flex;
+        
+    }
+}
+
 .projectSection {
-    margin: 2.5em 0;
+    margin-bottom: 3em;
+
+    // &--main {
+        
+    
+    // }
+
+    &--main2 {
+
+        @include atLarge {
+            margin-left: 5em;
+        }
+        
+        
+         
+    }
+
+    
 }
 
 .project_text {

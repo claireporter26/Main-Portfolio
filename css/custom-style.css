@@ -15,6 +15,10 @@ img {
   width: 100%;
 }
 
+.noTopMargin {
+  margin-top: 0;
+}
+
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
   background-color: #e2e28a;
@@ -515,8 +519,22 @@ footer a {
   display: block;
 }
 
+@media (min-width: 700px) {
+  .project_mainArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .projectSection {
-  margin: 2.5em 0;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 700px) {
+  .projectSection--main2 {
+    margin-left: 5em;
+  }
 }
 
 .project_text--header a {
