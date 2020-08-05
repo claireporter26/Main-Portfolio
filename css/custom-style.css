@@ -515,11 +515,15 @@ footer a {
   display: block;
 }
 
-.project_text--p {
-  font-weight: 200;
+.projectSection {
+  margin: 2.5em 0;
 }
 
-.project_mainArea a {
-  color: rgba(91, 146, 46, 0.8);
+.project_text--header a {
+  color: #e2e28a;
+}
+
+.project_text--p {
+  font-weight: 200;
 }
 /*# sourceMappingURL=custom-style.css.map */
