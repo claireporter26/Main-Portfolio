@@ -1,3 +1,15 @@
+.skillsArea {
+   
+}
+
+.skillSection {
+    @include atLarge {
+        display: flex;
+    }
+}
+
+
+
 #skill1::before{
     content: "";
     width: 60px;

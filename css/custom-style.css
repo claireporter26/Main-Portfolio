@@ -235,6 +235,14 @@ img {
   }
 }
 
+@media (min-width: 700px) {
+  .skillSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 #skill1::before {
   content: "";
   width: 60px;
