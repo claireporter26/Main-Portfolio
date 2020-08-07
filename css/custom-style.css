@@ -19,6 +19,18 @@ img {
   margin-top: 0;
 }
 
+.main-btn-design {
+  background-color: #96e654;
+  border: none;
+  padding: .5em 1em;
+  border-radius: 5px;
+}
+
+.main-btn-design a {
+  color: #171c21;
+  font-weight: 600;
+}
+
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
   background-color: #e2e28a;
@@ -138,6 +150,16 @@ img {
   margin-bottom: 1.5em;
 }
 
+.card_project {
+  margin: 2em 0;
+}
+
+@media (min-width: 700px) {
+  .card_project {
+    margin: 0 2em;
+  }
+}
+
 /* On mouse-over, increase card size */
 .card:hover {
   -webkit-transform: scale(1.03, 1.03);
@@ -165,7 +187,7 @@ img {
   font-weight: 300;
   margin: 5px;
   text-decoration: none;
-  color: #171c21;
+  color: #96e654;
 }
 
 .card-textbox--button {
@@ -525,6 +547,26 @@ footer a {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.project_mainArea_btn {
+  background-color: #96e654;
+  border: none;
+  padding: .5em 1em;
+  border-radius: 5px;
+}
+
+.project_mainArea_btn a {
+  color: #171c21;
+  font-weight: 600;
+}
+
+.project_mainArea_resource-link {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 5px;
+  text-decoration: none;
+  color: #96e654;
 }
 
 .projectSection {

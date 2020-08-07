@@ -3,7 +3,30 @@
         display: flex;
         
     }
+
+    &_btn {
+        
+        background-color: rgb(150, 230, 84);
+        border: none;
+        padding: .5em 1em;
+        border-radius: 5px;
+
+        a {
+            color: rgba(23, 28, 33, 1);
+            font-weight: 600;
+        }
+    }
+
+    &_resource-link {
+    font-size: 1.1rem;
+	font-weight: 300;
+	margin: 5px;
+	text-decoration: none;
+	color: rgb(150, 230, 84);
+    }
 }
+
+
 
 .projectSection {
     margin-bottom: 3em;
