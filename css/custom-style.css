@@ -249,15 +249,13 @@ img {
   margin: 3em auto;
 }
 
-@media (min-width: 700px) {
-  .skillSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+.skillSection_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .skill {
@@ -269,6 +267,25 @@ img {
   .skill {
     width: 45%;
   }
+}
+
+.skill--most-experience {
+  background-color: green;
+  color: #e2e28a;
+}
+
+.skill--some-experience {
+  background-color: orange;
+  color: #e2e28a;
+}
+
+.skill_title {
+  width: 100%;
+}
+
+.skill_title_header {
+  text-align: center;
+  font-size: 1rem;
 }
 
 #skill1::before {
