@@ -23,7 +23,11 @@ img {
 	background-color: rgb(150, 230, 84);
         border: none;
         padding: .5em 1em;
-        border-radius: 5px;
+		border-radius: 5px;
+		
+		&--bigger-margin {
+			margin: 1em auto 0 0;
+		}
 
         a {
             color: rgba(23, 28, 33, 1);

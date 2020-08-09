@@ -3,8 +3,21 @@
 }
 
 .skillSection {
+
+    margin: 3em auto;
+
     @include atLarge {
         display: flex;
+        justify-content: space-between;
+    }
+}
+
+.skill {
+    width: 100%;
+    max-width: 600px;
+
+    @include atLarge {
+        width: 45%;
     }
 }
 

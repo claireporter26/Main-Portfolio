@@ -26,6 +26,10 @@ img {
   border-radius: 5px;
 }
 
+.main-btn-design--bigger-margin {
+  margin: 1em auto 0 0;
+}
+
 .main-btn-design a {
   color: #171c21;
   font-weight: 600;
@@ -150,6 +154,12 @@ img {
   margin-bottom: 1.5em;
 }
 
+@media (min-width: 700px) {
+  .card_skills {
+    margin-bottom: 0;
+  }
+}
+
 .card_project {
   margin: 2em 0;
 }
@@ -168,18 +178,18 @@ img {
 
 /* Add some padding inside the card container */
 .card-textbox {
-  padding: 5px;
+  padding: 1em;
   background-color: white;
 }
 
 .card-textbox--title {
   font-size: 1.3rem;
-  margin: 5px;
+  margin: 0 auto 5px auto;
 }
 
 .card-textbox--main {
   font-size: 1rem;
-  margin: 5px;
+  margin: 5px auto;
 }
 
 .card-textbox--link {
@@ -235,11 +245,29 @@ img {
   }
 }
 
+.skillSection {
+  margin: 3em auto;
+}
+
 @media (min-width: 700px) {
   .skillSection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.skill {
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (min-width: 700px) {
+  .skill {
+    width: 45%;
   }
 }
 

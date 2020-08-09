@@ -27,7 +27,14 @@
 
 	&_skills {
 		margin-bottom: 1.5em;
+
+		@include atLarge {
+			margin-bottom: 0;
+		}
 	}
+
+
+
 
 	&_project {
 		margin: 2em 0;
@@ -47,18 +54,18 @@
   
   /* Add some padding inside the card container */
   .card-textbox {
-	padding: 5px;
+	padding: 1em;
 	background-color:  white; 
   }
 
   .card-textbox--title{
 	font-size: 1.3rem;
-	margin: 5px;
+	margin: 0 auto 5px auto;
   }
 
   .card-textbox--main{
 	font-size: 1rem;
-	margin: 5px;
+	margin: 5px auto;
   }
 
   .card-textbox--link{
