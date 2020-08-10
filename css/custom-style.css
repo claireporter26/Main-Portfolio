@@ -247,21 +247,35 @@ img {
 
 .skillSection {
   margin: 3em auto;
+  display: block;
 }
 
 .skillSection_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .skill {
-  width: 100%;
-  max-width: 600px;
-  min-width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.skill_text {
+  margin: 0;
 }
 
 .skill--most-experience {
@@ -278,12 +292,6 @@ img {
 
 .skill_1 {
   background-color: rgba(91, 146, 46, 0.5);
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 #skill2::before {

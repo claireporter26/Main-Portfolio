@@ -1,14 +1,13 @@
-.skillsArea {
-   
-}
+
 
 .skillSection {
 
     margin: 3em auto;
+    display: block;
 
     &_group {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     @include atLarge {
@@ -22,12 +21,23 @@
 }
 
 .skill {
-    width: 100%;
-    max-width: 600px;
-    min-width: 45%;
+    // width: 100%;
+    // max-width: 600px;
+    // min-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
 
     @include atLarge {
         // width: 45%;
+    }
+
+    &_text {
+        margin: 0;
+      
     }
 
     &--most-experience {
@@ -53,12 +63,10 @@
 
     &_1 {
         background-color: rgba(91, 146, 46, .5);
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-        text-align: center;
-        display: inline-block;
-        vertical-align: middle;
+        // border-radius: 50%;
+        
+        
+        // align-items: center;
     }
 }
 
