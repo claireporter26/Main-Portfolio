@@ -24,46 +24,57 @@
 .skill {
     width: 100%;
     max-width: 600px;
+    min-width: 45%;
 
     @include atLarge {
-        width: 45%;
+        // width: 45%;
     }
 
     &--most-experience {
-        background-color: green;
+        
         color: rgb(226, 226, 138);
     }
 
     &--some-experience {
-        background-color: orange;
+        
         color: rgb(226, 226, 138);
     }
 
     &_title {
-        width: 100%;
+        
         
 
         &_header {
-            text-align: center;
+            
             font-size: 1rem;
             
         }
+    }
+
+    &_1 {
+        background-color: rgba(91, 146, 46, .5);
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
 
 
-#skill1::before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background-color: red;
-    float: left;
-    margin-right: 20px;
-   } 
+// #skill1::before{
+//     content: "";
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 50%;
+//     -webkit-border-radius: 50%;
+//     -moz-border-radius: 50%;
+//     background-color: red;
+//     float: left;
+//     margin-right: 20px;
+//    } 
    
 #skill2::before{
     content: "";

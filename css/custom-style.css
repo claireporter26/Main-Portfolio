@@ -261,43 +261,29 @@ img {
 .skill {
   width: 100%;
   max-width: 600px;
-}
-
-@media (min-width: 700px) {
-  .skill {
-    width: 45%;
-  }
+  min-width: 45%;
 }
 
 .skill--most-experience {
-  background-color: green;
   color: #e2e28a;
 }
 
 .skill--some-experience {
-  background-color: orange;
   color: #e2e28a;
 }
 
-.skill_title {
-  width: 100%;
-}
-
 .skill_title_header {
-  text-align: center;
   font-size: 1rem;
 }
 
-#skill1::before {
-  content: "";
-  width: 60px;
-  height: 60px;
+.skill_1 {
+  background-color: rgba(91, 146, 46, 0.5);
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-color: red;
-  float: left;
-  margin-right: 20px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #skill2::before {
