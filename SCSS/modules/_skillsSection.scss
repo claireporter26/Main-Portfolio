@@ -1,4 +1,15 @@
+.aboutme {
+    
+    clear: left;
 
+    @include atLarge {
+        // display: flex;
+    }
+
+    &_text {
+       
+    }
+}
 
 .skillSection {
 
@@ -10,14 +21,24 @@
         justify-content: space-evenly;
     }
 
+
     @include atLarge {
-        
+        display: flex;
+        justify-content: space-between;
     }
+
+    // &_list1 {
+
+    // }
 }
 
 .skillSection:hover {
 
     
+}
+
+.skillArea {
+    clear: both;
 }
 
 .skill {
@@ -61,6 +82,13 @@
         }
     }
 
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: .5em auto 0 auto;
+    }
+
     &_1 {
         background-color: rgba(91, 146, 46, .5);
         // border-radius: 50%;
@@ -69,6 +97,53 @@
         // align-items: center;
     }
 }
+
+.skillSectionType {
+
+    
+    color: $mainDark;
+    padding: 1.4em;
+    margin: 1.7em 0;
+    border-radius: 7px;
+
+    @include atLarge {
+        margin: 0 1.5em;
+    }
+
+    ul {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0.7em 0 0 0;
+        
+        
+    }
+
+    &_1 {
+        background-color: rgba($mainGreen, 1);
+    }
+
+    &_2 {
+        background-color: rgba($mainGreen, .8);
+    }
+
+    &_3 {
+        background-color: rgba($mainGreen, .6);
+    }
+
+   
+}
+
+.skillType_text {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
 
 
 

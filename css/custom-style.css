@@ -1,3 +1,10 @@
+.aboutme_img {
+  width: 200px;
+  height: auto;
+  float: left;
+  padding: 0 1.5em 1.5em 0;
+}
+
 body, html {
   background-color: #171c21;
   margin: 0;
@@ -233,16 +240,21 @@ img {
 }
 
 .pageMain_header {
-  padding-bottom: 40px;
+  padding-bottom: .3em;
   font-size: 2.8rem;
   font-weight: 200;
+  color: rgba(150, 230, 84, 0.6);
+  margin-top: 1em;
 }
 
 @media (min-width: 700px) {
   .pageMain_header {
-    padding-bottom: 40px;
     font-size: 60px;
   }
+}
+
+.aboutme {
+  clear: left;
 }
 
 .skillSection {
@@ -257,6 +269,21 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (min-width: 700px) {
+  .skillSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.skillArea {
+  clear: both;
 }
 
 .skill {
@@ -290,8 +317,60 @@ img {
   font-size: 1rem;
 }
 
+.skill_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: .5em auto 0 auto;
+}
+
 .skill_1 {
   background-color: rgba(91, 146, 46, 0.5);
+}
+
+.skillSectionType {
+  color: #171c21;
+  padding: 1.4em;
+  margin: 1.7em 0;
+  border-radius: 7px;
+}
+
+@media (min-width: 700px) {
+  .skillSectionType {
+    margin: 0 1.5em;
+  }
+}
+
+.skillSectionType ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.skillSectionType li {
+  list-style-type: none;
+  margin: 0.7em 0 0 0;
+}
+
+.skillSectionType_1 {
+  background-color: #96e654;
+}
+
+.skillSectionType_2 {
+  background-color: rgba(150, 230, 84, 0.8);
+}
+
+.skillSectionType_3 {
+  background-color: rgba(150, 230, 84, 0.6);
+}
+
+.skillType_text {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 #skill2::before {
