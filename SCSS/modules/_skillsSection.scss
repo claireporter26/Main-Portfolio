@@ -87,6 +87,11 @@
         justify-content: space-between;
         width: 80%;
         margin: .5em auto 0 auto;
+
+        li {
+            margin-left: .5em;
+            
+        }
     }
 
     &_1 {
@@ -141,9 +146,16 @@
     margin: 0 auto;
     font-size: 1.1rem;
     text-align: center;
+    
 }
 
-
+.html5:before {
+    content: url(/images/html.png);
+    display: inline-block;
+    padding-right: .5em;
+   
+   
+}
 
 
 

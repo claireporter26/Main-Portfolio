@@ -25,6 +25,11 @@
 	height: auto;
 	color: rgba(23, 28, 33, 1);
 
+	&_link {
+		text-decoration: none;
+		color: $mainDark;
+	}
+
 	&_skills {
 		margin-bottom: 1.5em;
 
@@ -32,8 +37,6 @@
 			margin-bottom: 0;
 		}
 	}
-
-
 
 
 	&_project {
