@@ -552,13 +552,11 @@ footer a {
 .project_mainArea_btn {
   background-color: #96e654;
   border: none;
-  padding: .5em 1em;
+  padding: .3em 1em;
   border-radius: 5px;
-}
-
-.project_mainArea_btn a {
-  color: #171c21;
   font-weight: 600;
+  color: #171c21;
+  text-decoration: none;
 }
 
 .project_mainArea_resource-link {
