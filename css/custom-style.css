@@ -239,16 +239,134 @@ img {
   }
 }
 
-#skill1::before {
-  content: "";
-  width: 60px;
-  height: 60px;
+.aboutme {
+  clear: left;
+}
+
+.skillSection {
+  margin: 3em auto;
+  display: block;
+}
+
+.skillSection_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 700px) {
+  .skillSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.skillArea {
+  clear: both;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-color: red;
-  float: left;
-  margin-right: 20px;
+  height: 90px;
+  width: 90px;
+}
+
+.skill_text {
+  margin: 0;
+}
+
+.skill--most-experience {
+  color: #e2e28a;
+}
+
+.skill--some-experience {
+  color: #e2e28a;
+}
+
+.skill_title_header {
+  font-size: 1rem;
+}
+
+.skill_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: .5em auto 0 auto;
+}
+
+.skill_list li {
+  margin-left: .5em;
+}
+
+.skill_1 {
+  background-color: rgba(91, 146, 46, 0.5);
+}
+
+.skillSectionType {
+  color: #171c21;
+  padding: 1.4em;
+  margin: 1.7em 0;
+  border-radius: 7px;
+}
+
+@media (min-width: 700px) {
+  .skillSectionType {
+    margin: 0 1.5em;
+  }
+}
+
+.skillSectionType ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.skillSectionType li {
+  list-style-type: none;
+  margin: 0.7em 0 0 0;
+}
+
+.skillSectionType_1 {
+  background-color: #96e654;
+}
+
+.skillSectionType_2 {
+  background-color: rgba(150, 230, 84, 0.8);
+}
+
+.skillSectionType_3 {
+  background-color: rgba(150, 230, 84, 0.6);
+}
+
+.skillType_text {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.html5:before {
+  content: url(/images/html.png);
+  display: inline-block;
+  padding-right: .5em;
 }
 
 #skill2::before {
