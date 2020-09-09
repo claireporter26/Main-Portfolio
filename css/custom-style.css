@@ -22,7 +22,7 @@ img {
 .main-btn-design {
   background-color: #96e654;
   border: none;
-  padding: .5em 1em;
+  padding: .4em .6em;
   border-radius: 5px;
 }
 
@@ -168,18 +168,22 @@ img {
 
 /* Add some padding inside the card container */
 .card-textbox {
-  padding: 5px;
+  padding: .5em 1em .9em 1em;
   background-color: white;
 }
 
 .card-textbox--title {
   font-size: 1.3rem;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .card-textbox--main {
   font-size: 1rem;
   margin: 5px;
+}
+
+.card-textbox--subtitle {
+  font-size: .8rem;
 }
 
 .card-textbox--link {
@@ -541,6 +545,11 @@ footer a {
   display: block;
 }
 
+.card_link {
+  text-decoration: none;
+  color: #171c21;
+}
+
 @media (min-width: 700px) {
   .project_mainArea {
     display: -webkit-box;
@@ -577,7 +586,16 @@ footer a {
   }
 }
 
-.project_text--header a {
+.project_text--header {
+  margin: auto, 0, auto, 0;
+}
+
+.project_text--subtitle {
+  font-size: .8rem;
+  margin-bottom: 2.5em;
+}
+
+.project_text--subtitle a {
   color: #e2e28a;
 }
 

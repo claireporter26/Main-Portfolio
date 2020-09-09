@@ -47,18 +47,22 @@
   
   /* Add some padding inside the card container */
   .card-textbox {
-	padding: 5px;
+	padding: .5em 1em .9em 1em;
 	background-color:  white; 
   }
 
   .card-textbox--title{
 	font-size: 1.3rem;
-	margin: 5px;
+	margin: 5px 0;
   }
 
   .card-textbox--main{
 	font-size: 1rem;
 	margin: 5px;
+  }
+
+  .card-textbox--subtitle{
+	  font-size: .8rem;
   }
 
   .card-textbox--link{

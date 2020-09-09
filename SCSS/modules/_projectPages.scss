@@ -1,3 +1,10 @@
+.card_link {
+    text-decoration: none;
+    color: $mainDark;
+    
+    
+}
+
 .project_mainArea {
     @include atLarge {
         display: flex;
@@ -48,15 +55,24 @@
 
 .project_text {
     &--header {
+       margin: auto, 0, auto, 0;
+        
+        
+    }
+
+    &--subtitle {
+        font-size: .8rem;
+        margin-bottom: 2.5em;
 
         a {
             color: rgb(226, 226, 138);
         }
-        
     }
+
     &--p {
         font-weight: 200;
     }
+
 }
 
 // .project_mainArea a {
