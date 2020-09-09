@@ -47,8 +47,10 @@
   
   /* Add some padding inside the card container */
   .card-textbox {
-	padding: .5em 1em .9em 1em;
+	padding: .5em 1em .9em 15px;
 	background-color:  white; 
+	min-height: 140px;
+	position: relative;
   }
 
   .card-textbox--title{

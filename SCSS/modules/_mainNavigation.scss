@@ -80,9 +80,10 @@
 .nav-item {
 	padding: 2em;
 	border-radius: 1px;
+	margin: auto 0;
 
 	&:hover {
-	background-color: $mainGreen;
+	background-color: rgba($mainGreen, .8);
 
 		a {
 			color: $mainDark;

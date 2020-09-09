@@ -175,8 +175,10 @@ img {
 
 /* Add some padding inside the card container */
 .card-textbox {
-  padding: .5em 1em .9em 1em;
+  padding: .5em 1em .9em 15px;
   background-color: white;
+  min-height: 140px;
+  position: relative;
 }
 
 .card-textbox--title {
@@ -507,10 +509,11 @@ img {
 .nav-item {
   padding: 2em;
   border-radius: 1px;
+  margin: auto 0;
 }
 
 .nav-item:hover {
-  background-color: #96e654;
+  background-color: rgba(150, 230, 84, 0.8);
 }
 
 .nav-item:hover a {
@@ -683,11 +686,17 @@ footer a {
   color: #171c21;
 }
 
+.project_mainArea {
+  margin: 3em auto;
+}
+
 @media (min-width: 700px) {
   .project_mainArea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 5em;
   }
 }
 
@@ -699,6 +708,12 @@ footer a {
   font-weight: 600;
   color: #171c21;
   text-decoration: none;
+}
+
+.project_mainArea .project_btn-absolute {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
 }
 
 .project_mainArea_resource-link {
