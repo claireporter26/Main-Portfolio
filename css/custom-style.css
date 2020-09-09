@@ -504,6 +504,19 @@ img {
   }
 }
 
+.nav-item {
+  padding: 2em;
+  border-radius: 1px;
+}
+
+.nav-item:hover {
+  background-color: #96e654;
+}
+
+.nav-item:hover a {
+  color: #171c21;
+}
+
 .site-nav li {
   list-style: none;
   padding: .7em;
@@ -547,14 +560,9 @@ img {
   }
 }
 
-.nav li a:hover {
-  background-color: #ffeed2;
-  color: #171c21;
-}
-
 @media (min-width: 700px) {
   .nav li a:hover {
-    background-color: #5b922e;
+    color: #171c21;
   }
 }
 

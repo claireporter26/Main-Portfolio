@@ -77,7 +77,25 @@
 	}
 }
 
+.nav-item {
+	padding: 2em;
+	border-radius: 1px;
 
+	&:hover {
+	background-color: $mainGreen;
+
+		a {
+			color: $mainDark;
+		}
+	
+	}
+	
+
+	@include atLarge {
+		// background-color: $mainGreen;
+	}
+	
+}
 
 .site-nav li {
 	list-style: none;
@@ -125,11 +143,11 @@
 
 .nav li a:hover{
 
-	background-color: #ffeed2;
-	color: rgba(23, 28, 33, 1);
+	// background-color: #ffeed2;
+	// color: rgba(23, 28, 33, 1);
 
 	@include atLarge {
-		background-color: rgb(91, 146, 46);
+		color: $mainDark;
 	}
 	
 }
