@@ -31,6 +31,13 @@ img {
   font-weight: 600;
 }
 
+.aboutme_img {
+  width: 200px;
+  height: auto;
+  float: left;
+  padding: 0 1.5em 1.5em 0;
+}
+
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
   background-color: #e2e28a;
