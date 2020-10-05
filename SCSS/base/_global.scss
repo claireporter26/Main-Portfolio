@@ -21,14 +21,20 @@ img {
 }
 
 .main-btn-design {
-	background-color: rgb(150, 230, 84);
+	background-color: $mainGreen;
         border: none;
         padding: .4em .6em;
         border-radius: 5px;
 
+		&:hover {
+			
+			background-color: rgba($mainGreen, .7);
+		}
+
         a {
-            color: rgba(23, 28, 33, 1);
-            font-weight: 600;
+            color: $mainDark;
+			font-weight: 600;
+
         }
 }
 
