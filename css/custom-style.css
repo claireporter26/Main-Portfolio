@@ -13,6 +13,7 @@ body, html {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 .noTopMargin {
@@ -42,6 +43,10 @@ img {
   padding: 0 1.5em 1.5em 0;
 }
 
+.gitHub-logo {
+  width: 320px;
+}
+
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
   background-color: #e2e28a;
@@ -55,7 +60,7 @@ img {
   position: relative;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .intro-banner {
     margin-bottom: 20px;
   }
@@ -70,7 +75,7 @@ img {
   height: 33%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .intro-banner--textbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -106,7 +111,7 @@ img {
   padding: 1.3em 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .intro-text {
     padding: 3px 1px 13px 1px;
     text-align: center;
@@ -127,23 +132,19 @@ img {
   margin: 1.5em auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .card-area,
   .project-area {
     margin: 50px auto;
   }
 }
 
-.flexcard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+@media (min-width: 1000px) {
+  .flexcard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .card {
@@ -165,10 +166,27 @@ img {
   margin: 2em 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .card_project {
     margin: 0 2em;
   }
+}
+
+.card-image {
+  margin: 0;
+  padding: 0;
+}
+
+.card-image_github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* On mouse-over, increase card size */
@@ -232,7 +250,7 @@ img {
   margin: 1.5em auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .pageMain {
     height: 500px;
     padding: 30px 60px;
@@ -245,7 +263,7 @@ img {
   font-weight: 400;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .pageMain_header {
     padding-bottom: 40px;
     font-size: 60px;
@@ -270,7 +288,7 @@ img {
           justify-content: space-evenly;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .skillSection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -342,7 +360,7 @@ img {
   border-radius: 7px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .skillSectionType {
     margin: 0 1.5em;
   }
@@ -455,7 +473,7 @@ img {
   height: auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -488,7 +506,7 @@ img {
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .site-nav ul {
     width: auto;
     padding: .2em .1em;
@@ -503,7 +521,7 @@ img {
   font-size: .9rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .nav {
     visibility: visible;
     width: auto;
@@ -531,7 +549,7 @@ img {
   display: block;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .site-nav li {
     display: inline-block;
     margin-right: 5px;
@@ -545,7 +563,7 @@ img {
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .nav-right {
     width: auto;
   }
@@ -560,14 +578,14 @@ img {
   display: block;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .nav li a {
     width: auto;
     padding: 0;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .nav li a:hover {
     color: #171c21;
   }
@@ -588,7 +606,7 @@ img {
   padding: 10px 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .brand {
     font-size: 1rem;
   }
@@ -616,7 +634,7 @@ img {
   z-index: 10;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .nav-toggle {
     visibility: hidden;
   }
@@ -695,7 +713,7 @@ footer a {
   margin: 3em auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .project_mainArea {
     display: -ms-grid;
     display: grid;
@@ -733,7 +751,7 @@ footer a {
   margin-bottom: 3em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   .projectSection--main2 {
     margin-left: 5em;
   }

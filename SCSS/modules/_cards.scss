@@ -12,9 +12,13 @@
 
 
 .flexcard {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+
+	@include atLarge {
+		display: flex;
+	}
+	
+	// flex-flow: row wrap;
+	// justify-content: space-around;
 }
 
 .card {
@@ -36,6 +40,21 @@
 			margin: 0 2em;
 		}
 	}
+
+	&-image {
+		// min-height: 220px;
+		margin: 0;
+		padding: 0;
+		
+
+		&_github {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+
   }
 
 
