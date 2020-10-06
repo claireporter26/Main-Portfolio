@@ -6,6 +6,21 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,7 +60,7 @@ img {
 
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
-  background-color: #e2e28a;
+  background-color: #ffeed2;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -194,7 +209,7 @@ img {
 /* Add some padding inside the card container */
 .card-textbox {
   padding: .5em 1em .9em 15px;
-  background-color: white;
+  background-color: #FFF;
   min-height: 140px;
   position: relative;
 }
@@ -226,14 +241,10 @@ img {
   border-width: 1px;
   border-color: #a8a850;
   padding: .2em .5em;
-  background-color: rgba(91, 146, 46, 0.8);
+  background-color: #96e654;
   font-weight: bold;
   font-size: 15px;
   margin: .7em auto .7em 0;
-}
-
-.card-textbox--button:hover {
-  background-color: red;
 }
 
 .card-textbox--link:hover {
@@ -319,11 +330,11 @@ img {
 }
 
 .skill--most-experience {
-  color: #e2e28a;
+  color: #ffeed2;
 }
 
 .skill--some-experience {
-  color: #e2e28a;
+  color: #ffeed2;
 }
 
 .skill_title_header {
@@ -343,10 +354,6 @@ img {
 
 .skill_list li {
   margin-left: .5em;
-}
-
-.skill_1 {
-  background-color: rgba(91, 146, 46, 0.5);
 }
 
 .skillSectionType {
@@ -452,7 +459,7 @@ img {
 .navContainer {
   padding: 15px 0;
   width: 100%;
-  border-bottom: solid .1px #ffeed2;
+  border-bottom: solid 0.1px #ffeed2;
   font-size: .8rem;
   height: auto;
 }
@@ -622,7 +629,7 @@ img {
   padding: 0;
   border-radius: 50%;
   background-color: #ffeed2;
-  color: #07282d;
+  color: #171c21;
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   position: absolute;
@@ -660,7 +667,7 @@ img {
   display: block;
   margin: 0 auto;
   height: 2px;
-  background: #07282d;
+  background: #171c21;
 }
 
 .hamburger::before,
@@ -685,15 +692,15 @@ h1 {
 
 footer {
   background-color: #171c21;
-  color: #fff;
+  color: #ffeed2;
   width: 100%;
-  margin-top: 20px;
+  margin-top: auto;
   font-size: .7rem;
   text-align: center;
 }
 
 footer a {
-  color: #fff;
+  color: #ffeed2;
 }
 
 .refer {
@@ -740,7 +747,7 @@ footer a {
   font-weight: 300;
   margin: 5px;
   text-decoration: none;
-  color: #96e654;
+  background-color: #96e654;
 }
 
 .projectSection {
@@ -763,7 +770,7 @@ footer a {
 }
 
 .project_text--subtitle a {
-  color: #e2e28a;
+  color: #ffeed2;
 }
 
 .project_text--p {

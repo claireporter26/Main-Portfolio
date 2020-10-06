@@ -17,12 +17,13 @@
     }
 
     &_btn {
-        background-color: rgb(150, 230, 84);
+        // background-color: rgb(150, 230, 84);
+        background-color: $mainGreen;
         border: none;
         padding: .3em 1em;
         border-radius: 5px;
         font-weight: 600;
-        color: rgba(23, 28, 33, 1);
+        color: $mainDark;
         text-decoration: none;
 
        
@@ -39,7 +40,8 @@
 	font-weight: 300;
 	margin: 5px;
 	text-decoration: none;
-	color: rgb(150, 230, 84);
+    // color: rgb(150, 230, 84);
+    background-color: $mainGreen;
     }
 }
 
@@ -78,7 +80,7 @@
         margin-bottom: 2.5em;
 
         a {
-            color: rgb(226, 226, 138);
+            color: $mainLight;
         }
     }
 

@@ -2,7 +2,7 @@
 	
 	padding: 15px 0;
 	width: 100%;
-	border-bottom: solid .1px #ffeed2;
+	border-bottom: solid .1px $mainLight;
 	font-size: .8rem;
 	height: auto;
 	
@@ -127,7 +127,7 @@
 
 
 .nav li a {
-	color: #ffeed2;
+	color: $mainLight;
 	text-decoration: none;
 	padding: .2em 1em;
 	border-bottom: none;
@@ -198,8 +198,9 @@
 	padding: 0;
 	
     border-radius: 50%;
-    background-color: rgb(255,238,210);
-    color: #07282d;
+	// background-color: rgb(255,238,210);
+	background-color: $mainLight;
+    color: $mainDark;
     transition: opacity 250ms ease;
 	position: absolute;
 	right: 0;
@@ -241,7 +242,7 @@
  display: block;
  margin: 0 auto;
  height: 2px;
- background: #07282d;
+ background: $mainDark;
 }
 
 .hamburger::before,
@@ -264,16 +265,16 @@ h1{
 }
 
 footer {
-	background-color: rgba(23, 28, 33, 1);
-	color: #fff;
+	background-color: $mainDark;
+	color: $mainLight;
 	width: 100%;
 	// border-top: solid .1px #ffeed2;
-	margin-top: 20px;
+	margin-top: auto;
 	font-size: .7rem;
 	text-align: center;
 
 	a {
-		color: #fff;
+		color:$mainLight;
 	}
 
 	

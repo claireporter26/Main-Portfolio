@@ -63,12 +63,12 @@
 
     &--most-experience {
         
-        color: rgb(226, 226, 138);
+        color: $mainLight;
     }
 
     &--some-experience {
         
-        color: rgb(226, 226, 138);
+        color: $mainLight;
     }
 
     &_title {
@@ -95,8 +95,8 @@
     }
 
     &_1 {
-        background-color: rgba(91, 146, 46, .5);
-        // border-radius: 50%;
+        // background-color: rgba(91, 146, 46, .5);
+        // // border-radius: 50%;
         
         
         // align-items: center;

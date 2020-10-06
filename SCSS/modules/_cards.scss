@@ -27,7 +27,7 @@
 	transition: 0.3s;
 	max-width: 400px;
 	height: auto;
-	color: rgba(23, 28, 33, 1);
+	color: $mainDark;
 
 	&_skills {
 		margin-bottom: 1.5em;
@@ -67,7 +67,8 @@
   /* Add some padding inside the card container */
   .card-textbox {
 	padding: .5em 1em .9em 15px;
-	background-color:  white; 
+	background-color: #FFF; 
+	
 	min-height: 140px;
 	position: relative;
   }
@@ -91,7 +92,7 @@
 	font-weight: 300;
 	margin: 5px;
 	text-decoration: none;
-	color: rgb(150, 230, 84);
+	color: $mainGreen;
   }
 
   .card-textbox--button {
@@ -100,7 +101,8 @@
 	border-width: 1px;
 	border-color: rgb(168, 168, 80);
 	padding: .2em .5em;
-	background-color: rgba(91, 146, 46, .8);
+	// background-color: rgba(91, 146, 46, .8);
+	background-color: $mainGreen;
 	font-weight: bold;
 	font-size: 15px;
 	margin: .7em auto .7em 0;
@@ -110,7 +112,7 @@
 
 .card-textbox--button:hover {
 	// background-color: rgba(91, 146, 46, .6);
-	background-color: red;
+	// background-color: red;
 }
 
 .card-textbox--link:hover{
