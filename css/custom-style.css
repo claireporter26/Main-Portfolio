@@ -43,10 +43,6 @@ img {
   padding: 0 1.5em 1.5em 0;
 }
 
-.gitHub-logo {
-  width: 320px;
-}
-
 .intro-banner {
   background-image: url(./../images/mainimage2.jpg);
   background-color: #e2e28a;
@@ -55,8 +51,8 @@ img {
   background-position: top center;
   border-radius: 5px;
   margin-top: 0px;
-  height: 520px;
-  min-height: 350px;
+  height: auto;
+  min-height: 600px;
   position: relative;
 }
 
@@ -127,7 +123,7 @@ img {
 
 .card-area,
 .project-area {
-  width: 95%;
+  width: 90%;
   height: auto;
   margin: 1.5em auto;
 }
