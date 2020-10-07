@@ -48,7 +48,7 @@
 	margin: 5px;
 	text-decoration: none;
     // color: rgb(150, 230, 84);
-    background-color: $mainGreen;
+    color: $mainGreen;
     }
 }
 
@@ -61,11 +61,21 @@
         
     
     // }
+    &--main1 {
 
+        @include atLarge {
+           
+            width: 100%;
+        }
+        
+        
+         
+    }
     &--main2 {
 
         @include atLarge {
             margin-left: 5em;
+            width: 100%;
         }
         
         

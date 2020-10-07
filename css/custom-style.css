@@ -28,7 +28,6 @@ body {
 
 img {
   width: 100%;
-  height: 100%;
 }
 
 .noTopMargin {
@@ -694,7 +693,7 @@ footer {
   background-color: #171c21;
   color: #ffeed2;
   width: 100%;
-  margin-top: auto;
+  margin-top: 3em;
   font-size: .7rem;
   text-align: center;
 }
@@ -758,7 +757,7 @@ footer a {
   font-weight: 300;
   margin: 5px;
   text-decoration: none;
-  background-color: #96e654;
+  color: #96e654;
 }
 
 .projectSection {
@@ -766,8 +765,15 @@ footer a {
 }
 
 @media (min-width: 1000px) {
+  .projectSection--main1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
   .projectSection--main2 {
     margin-left: 5em;
+    width: 100%;
   }
 }
 
