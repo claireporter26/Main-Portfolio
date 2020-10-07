@@ -726,6 +726,17 @@ footer a {
   }
 }
 
+@media (min-width: 1000px) {
+  .project_mainArea--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .project_mainArea_btn {
   background-color: #96e654;
   border: none;

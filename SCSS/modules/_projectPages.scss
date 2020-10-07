@@ -16,6 +16,13 @@
         
     }
 
+    &--flex {
+        @include atLarge {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     &_btn {
         // background-color: rgb(150, 230, 84);
         background-color: $mainGreen;
