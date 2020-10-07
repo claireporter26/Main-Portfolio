@@ -1,12 +1,17 @@
 .aboutme {
     
     clear: left;
+    margin-bottom: 3em;
 
     @include atLarge {
         // display: flex;
     }
-
+    &_img {
+       padding: 0 2.7em 2em 0; 
+    }
     &_text {
+
+        font-weight: 200;
 
         &--large {
             font-size: 1.7rem;
@@ -136,11 +141,11 @@
     }
 
     &_2 {
-        background-color: rgba($mainGreen, .8);
+        background-color: rgba($mainGreen, .9);
     }
 
     &_3 {
-        background-color: rgba($mainGreen, .6);
+        background-color: rgba($mainGreen, .8);
     }
 
    
