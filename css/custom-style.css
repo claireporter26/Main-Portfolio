@@ -159,7 +159,6 @@ img {
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
   -webkit-box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
           box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
   -webkit-transition: 0.3s;
@@ -267,13 +266,14 @@ img {
 .pageMain_header {
   padding-bottom: 40px;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 @media (min-width: 1000px) {
   .pageMain_header {
-    padding-bottom: 40px;
-    font-size: 60px;
+    padding-bottom: 0;
+    font-size: 4rem;
+    text-align: center;
   }
 }
 
@@ -304,15 +304,6 @@ img {
   display: block;
 }
 
-.skillSection_group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 @media (min-width: 1000px) {
   .skillSection {
     display: -webkit-box;
@@ -324,39 +315,17 @@ img {
   }
 }
 
-.skillArea {
-  clear: both;
-}
-
-.skill {
+.skillSection_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  height: 90px;
-  width: 90px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.skill_text {
-  margin: 0;
-}
-
-.skill--most-experience {
-  color: #ffeed2;
-}
-
-.skill--some-experience {
-  color: #ffeed2;
-}
-
-.skill_title_header {
-  font-size: 1rem;
+.skillArea {
+  clear: both;
 }
 
 .skill_list {
@@ -413,60 +382,6 @@ img {
   margin: 0 auto;
   font-size: 1.1rem;
   text-align: center;
-}
-
-.html5:before {
-  content: url(/images/html.png);
-  display: inline-block;
-  padding-right: .5em;
-}
-
-#skill2::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-color: blue;
-  float: left;
-  margin-right: 20px;
-}
-
-#skill3::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-color: green;
-  float: left;
-  margin-right: 20px;
-}
-
-#skill4::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-color: orange;
-  float: left;
-  margin-right: 20px;
-}
-
-#skill5::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  background-color: purple;
-  float: left;
-  margin-right: 20px;
 }
 
 .github-logo {

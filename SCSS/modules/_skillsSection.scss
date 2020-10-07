@@ -1,22 +1,17 @@
 .aboutme {
-    
     clear: left;
     margin-bottom: 3em;
 
-    @include atLarge {
-        // display: flex;
-    }
     &_img {
        padding: 0 2.7em 2em 0; 
     }
-    &_text {
 
+    &_text {
         font-weight: 200;
 
         &--large {
             font-size: 1.7rem;
         }
-       
     }
 }
 
@@ -25,25 +20,15 @@
     margin: 3em auto;
     display: block;
 
+        @include atLarge {
+            display: flex;
+            justify-content: space-between;
+        }
+    
     &_group {
         display: flex;
         justify-content: space-evenly;
     }
-
-
-    @include atLarge {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    // &_list1 {
-
-    // }
-}
-
-.skillSection:hover {
-
-    
 }
 
 .skillArea {
@@ -51,46 +36,7 @@
 }
 
 .skill {
-    // width: 100%;
-    // max-width: 600px;
-    // min-width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
-
-    @include atLarge {
-        // width: 45%;
-    }
-
-    &_text {
-        margin: 0;
-      
-    }
-
-    &--most-experience {
-        
-        color: $mainLight;
-    }
-
-    &--some-experience {
-        
-        color: $mainLight;
-    }
-
-    &_title {
-        
-        
-
-        &_header {
-            
-            font-size: 1rem;
-            
-        }
-    }
-
+  
     &_list {
         display: flex;
         justify-content: space-between;
@@ -99,22 +45,11 @@
 
         li {
             margin-left: .5em;
-            
         }
-    }
-
-    &_1 {
-        // background-color: rgba(91, 146, 46, .5);
-        // // border-radius: 50%;
-        
-        
-        // align-items: center;
     }
 }
 
 .skillSectionType {
-
-    
     color: $mainDark;
     padding: 1.4em;
     margin: 1.7em 0;
@@ -132,8 +67,6 @@
     li {
         list-style-type: none;
         margin: 0.7em 0 0 0;
-        
-        
     }
 
     &_1 {
@@ -147,8 +80,6 @@
     &_3 {
         background-color: rgba($mainGreen, .8);
     }
-
-   
 }
 
 .skillType_text {
@@ -158,72 +89,11 @@
     
 }
 
-.html5:before {
-    content: url(/images/html.png);
-    display: inline-block;
-    padding-right: .5em;
-   
-   
-}
+// .html5:before {
+//     content: url(/images/html.png);
+//     display: inline-block;
+//     padding-right: .5em; 
+// }
 
 
 
-// #skill1::before{
-//     content: "";
-//     width: 60px;
-//     height: 60px;
-//     border-radius: 50%;
-//     -webkit-border-radius: 50%;
-//     -moz-border-radius: 50%;
-//     background-color: red;
-//     float: left;
-//     margin-right: 20px;
-//    } 
-   
-#skill2::before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background-color: blue;
-    float: left;
-    margin-right: 20px;
-    } 
-
-#skill3::before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background-color: green;
-    float: left;
-    margin-right: 20px;
-} 
-
-#skill4::before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background-color: orange;
-    float: left;
-    margin-right: 20px;
-} 
-
-#skill5::before{
-    content: "";
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background-color: purple;
-    float: left;
-    margin-right: 20px;
-} 

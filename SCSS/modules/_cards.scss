@@ -9,20 +9,14 @@
 	}
 }
 
-
-
 .flexcard {
 
 	@include atLarge {
 		display: flex;
 	}
-	
-	// flex-flow: row wrap;
-	// justify-content: space-around;
 }
 
 .card {
-	/* Add shadows to create the "card" effect */
 	box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
 	transition: 0.3s;
 	max-width: 400px;
@@ -42,19 +36,15 @@
 	}
 
 	&-image {
-		// min-height: 220px;
 		margin: 0;
 		padding: 0;
 		
-
 		&_github {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
 	}
-
-
   }
 
 
@@ -68,7 +58,6 @@
   .card-textbox {
 	padding: .5em 1em .9em 15px;
 	background-color: #FFF; 
-	
 	min-height: 140px;
 	position: relative;
   }
@@ -84,7 +73,7 @@
   }
 
   .card-textbox--subtitle{
-	  font-size: .8rem;
+	font-size: .8rem;
   }
 
   .card-textbox--link{
@@ -96,27 +85,17 @@
   }
 
   .card-textbox--button {
-
 	border-radius: 10px;
 	border-width: 1px;
 	border-color: rgb(168, 168, 80);
 	padding: .2em .5em;
-	// background-color: rgba(91, 146, 46, .8);
 	background-color: $mainGreen;
 	font-weight: bold;
 	font-size: 15px;
 	margin: .7em auto .7em 0;
-	
-
   }
-
-.card-textbox--button:hover {
-	// background-color: rgba(91, 146, 46, .6);
-	// background-color: red;
-}
 
 .card-textbox--link:hover{
 	color: black;
-	
 }
 

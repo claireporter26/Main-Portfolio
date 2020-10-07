@@ -1,11 +1,9 @@
 .navContainer{
-	
 	padding: 15px 0;
 	width: 100%;
 	border-bottom: solid .1px $mainLight;
 	font-size: .8rem;
 	height: auto;
-	
 }
 
 .navItems {
@@ -17,29 +15,20 @@
 
 .site-nav {
 	margin: 0px;
-	// display: relative;
 	height: auto;
-	
-	
-
 
 	@include atLarge {
 		display: flex;	
 		align-items: top;
 		justify-content: space-between;
-		
-		
 	}
 
 	&_small {
 		display: flex;
 		margin: 0px;
-	
 		align-items: center;
 		justify-content: space-between;
 	}
-
-	
 }
 
 .site-nav ul {
@@ -51,29 +40,18 @@
 		width: auto;
 		padding: .2em .1em;
 	}
-	
 }
 
 .nav {
-	
-	
 	visibility: hidden;
 	width: 100%;
 	height: 0;
 	text-align: center;
 	font-size: .9rem;
-	
 
 	@include atLarge {
-		
 		visibility: visible;
 		width: auto;
-
-		// display: flex;
-		// float: right;
-		// position: absolute;
-		// right: 0;
-		
 	}
 }
 
@@ -88,14 +66,7 @@
 		a {
 			color: $mainDark;
 		}
-	
 	}
-	
-
-	@include atLarge {
-		// background-color: $mainGreen;
-	}
-	
 }
 
 .site-nav li {
@@ -103,9 +74,6 @@
 	padding: .7em;
 	width: 100%;
 	display: block;
-	
-	
-	// font-size: 18px;
 
 	@include atLarge {
 		display: inline-block;
@@ -122,7 +90,6 @@
 	@include atLarge {
 		width: auto;
 	}
-	
 }
 
 
@@ -137,26 +104,20 @@
 	@include atLarge {
 		width: auto;
 		padding: 0;
-		
 	}
-	
 }
 
 .nav li a:hover{
 
-	// background-color: #ffeed2;
-	// color: rgba(23, 28, 33, 1);
-
 	@include atLarge {
 		color: $mainDark;
 	}
-	
 }
 
 .active-nav {
 	font-size: 145%;
-	
 }
+
 
 /* brand */
 
@@ -165,24 +126,12 @@
 	color: rgba(255,238,210, .5);
 	padding: 0;
 	width: 100%;
-	
-	
-	
-	
-	// float: left;
-	
 	font-weight: 300;
-	
-	// display: block;
 	text-decoration: none;
 	padding: 10px 0;
-	// margin-top: 10px;
-	
-	
 
 	@include atLarge {
 		font-size: 1rem;
-		
 	}
 }
 
@@ -196,19 +145,13 @@
     width: 3em;
     height: 3em;
 	padding: 0;
-	
     border-radius: 50%;
-	// background-color: rgb(255,238,210);
 	background-color: $mainLight;
     color: $mainDark;
     transition: opacity 250ms ease;
 	position: absolute;
 	right: 0;
 	z-index: 10;
-	
-
-
-	
 
 	@include atLarge {
 		visibility: hidden;
@@ -226,9 +169,6 @@
     position: relative;
 	display: block;
 	width: 100%;
-	
-	
-    
 }
 
 .hamburger {
@@ -261,14 +201,12 @@
 
 h1{
 	margin: 0;
-	
 }
 
 footer {
 	background-color: $mainDark;
 	color: $mainLight;
 	width: 100%;
-	// border-top: solid .1px #ffeed2;
 	margin-top: 3em;
 	font-size: .7rem;
 	text-align: center;
@@ -276,16 +214,8 @@ footer {
 	a {
 		color:$mainLight;
 	}
-
-	
-
 }
 
 .refer {
 	display: block;
 }
-
-// footer li {
-// 	display: inline-block;
-// 	padding: 5px 15px;
-// }

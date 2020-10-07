@@ -4,7 +4,6 @@ body, html{
 	padding: 0;
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
-	
 }
 
 html {
@@ -24,8 +23,6 @@ body {
 
 img {
 	width: 100%;
-	// height: 100%;
-	
 }
 
 .noTopMargin {
@@ -34,30 +31,16 @@ img {
 
 .main-btn-design {
 	background-color: $mainGreen;
-        border: none;
-        padding: .4em .6em;
-        border-radius: 5px;
+	border: none;
+	padding: .4em .6em;
+	border-radius: 5px;
 
-		&:hover {
-			
-			background-color: rgba($mainGreen, .7);
-		}
+	&:hover {
+		background-color: rgba($mainGreen, .7);
+	}
 
-        a {
-            color: $mainDark;
-			font-weight: 600;
-
-        }
+	a {
+		color: $mainDark;
+		font-weight: 600;
+	}
 }
-
-
-
-
-
-// .group:after {
-// 	content: "";
-// 	display: table;
-// 	clear: both;
-//   }
-
-
