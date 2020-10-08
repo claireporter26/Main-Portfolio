@@ -11,9 +11,19 @@
 
 .flexcard {
 
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
 	@include atLarge {
-		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
+}
+
+.card-container {
+	margin: 0 auto;
+	width: auto;
 }
 
 .card {

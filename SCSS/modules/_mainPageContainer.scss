@@ -2,6 +2,7 @@
 	color: $mainLight;
 	width: 85%;
 	margin: 1.5em auto;
+	
 
 		@include atLarge {
 			height: 500px;
@@ -12,8 +13,9 @@
 	padding-bottom: 40px;
 	font-size: 3rem;
 	font-weight: 200;
+	text-align: center;
 
-		@include atLarge {
+		@include atMedium {
 			padding-bottom: 0;
 			font-size: 4rem;
 			text-align: center;
@@ -25,4 +27,10 @@
 		font-size: 2.5rem;
 	}
 }
+
+// .homeMain {
+// 	display: flex;
+// 	justify-content: center;
+// 	flex-direction: column;
+// }
 

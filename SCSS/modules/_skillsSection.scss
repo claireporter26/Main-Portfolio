@@ -20,7 +20,7 @@
     margin: 3em auto;
     display: block;
 
-        @include atLarge {
+        @include atMedium {
             display: flex;
             justify-content: space-between;
         }
@@ -38,10 +38,19 @@
 .skill {
   
     &_list {
-        display: flex;
-        justify-content: space-between;
         width: 80%;
         margin: .5em auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        @include atMedium {
+            display: inline-block;
+        }
+
+        @include atLarge{
+            display: flex;
+            justify-content: space-between;
+        }
 
         li {
             margin-left: .5em;
@@ -54,9 +63,18 @@
     padding: 1.4em;
     margin: 1.7em 0;
     border-radius: 7px;
+    
 
+    @include atMedium{
+        width: 32%;
+        text-align: center;
+    }
+
+    
     @include atLarge {
         margin: 0 1.5em;
+        width: auto;
+        text-align: left;
     }
 
     ul {

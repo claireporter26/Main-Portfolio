@@ -6,16 +6,18 @@
 .project_mainArea {
 
     margin: 3em auto;
+    
 
         @include atLarge {
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 5em;
+            
         }
 
     &--flex {
 
-        @include atLarge {
+        @include atMedium {
             display: flex;
             justify-content: center;
         }
@@ -51,14 +53,14 @@
 
     &--main1 {
 
-        @include atLarge {
+        @include atMedium {
             width: 100%;
         }  
     }
 
     &--main2 {
 
-        @include atLarge {
+        @include atMedium {
             margin-left: 5em;
             width: 100%;
         }
