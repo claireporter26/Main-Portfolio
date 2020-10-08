@@ -636,6 +636,10 @@ footer a {
   color: #ffeed2;
 }
 
+.footer-list {
+  padding: 0;
+}
+
 .refer {
   display: block;
 }
