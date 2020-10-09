@@ -1,5 +1,5 @@
 .intro-banner{
-	background-image: url(./../images/mainimage2.jpg);
+	background-image: url(./../images/mainimage_large.jpg);
 	background-color: $mainLight;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -13,6 +13,10 @@
 	@include atLarge {
 		margin-bottom: 20px;
 	}
+
+	@include atLarger {
+		min-height: 800px;
+	}
 }
 
 .intro-banner--textbox{
@@ -22,19 +26,27 @@
 	position: absolute;
 	bottom: 0;
 	height: 33%;
-	
+
 	@include atLarge {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		left: 35px;
-		top: 35px;
+		left: 3em;
+		top: 3em;
 		width: 24em;
 		height: 24em;
 		border-radius: 50%;	
 		padding: 60px;
 	}
+
+	@include atLarger {
+		left: 5em;
+		top: 6em;
+		width: 26em;
+		height: 26em;
+	}
+
 }
 
 .intro-text{

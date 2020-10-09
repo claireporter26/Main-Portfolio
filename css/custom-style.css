@@ -59,7 +59,7 @@ img {
 }
 
 .intro-banner {
-  background-image: url(./../images/mainimage2.jpg);
+  background-image: url(./../images/mainimage_large.jpg);
   background-color: #ffeed2;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,6 +74,12 @@ img {
 @media (min-width: 1200px) {
   .intro-banner {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 3000px) {
+  .intro-banner {
+    min-height: 800px;
   }
 }
 
@@ -101,12 +107,21 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    left: 35px;
-    top: 35px;
+    left: 3em;
+    top: 3em;
     width: 24em;
     height: 24em;
     border-radius: 50%;
     padding: 60px;
+  }
+}
+
+@media (min-width: 3000px) {
+  .intro-banner--textbox {
+    left: 5em;
+    top: 6em;
+    width: 26em;
+    height: 26em;
   }
 }
 
