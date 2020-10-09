@@ -79,7 +79,7 @@ img {
 
 @media (min-width: 3000px) {
   .intro-banner {
-    min-height: 800px;
+    min-height: 1400px;
   }
 }
 
@@ -109,6 +109,7 @@ img {
             flex-direction: column;
     left: 3em;
     top: 3em;
+    bottom: auto;
     width: 24em;
     height: 24em;
     border-radius: 50%;
@@ -118,10 +119,10 @@ img {
 
 @media (min-width: 3000px) {
   .intro-banner--textbox {
-    left: 5em;
-    top: 6em;
-    width: 26em;
-    height: 26em;
+    left: 9em;
+    top: 10em;
+    width: 40em;
+    height: 40em;
   }
 }
 
@@ -145,10 +146,22 @@ img {
   }
 }
 
+@media (min-width: 3000px) {
+  .intro-text {
+    font-size: 2.5rem;
+  }
+}
+
 .intro-banner--button {
   font-weight: 600;
   font-size: 1rem;
   margin: 0;
+}
+
+@media (min-width: 3000px) {
+  .intro-banner--button a {
+    font-size: 1.7rem;
+  }
 }
 
 .card-area,
