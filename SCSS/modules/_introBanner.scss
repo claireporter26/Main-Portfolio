@@ -1,14 +1,28 @@
 .intro-banner{
-	background-image: url(./../images/mainimage_large.jpg);
-	background-color: $mainLight;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top center;
-	border-radius: 5px;
-	margin-top: 0px;
+	background-color: $mainDark;
 	height: auto;
-	min-height: 600px;
-	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 7em 3em;
+
+	@include atMedium {
+		
+		margin-top: 0px;
+		flex-direction: row;
+		min-height: 600px;
+		
+		padding: 1em 3em;
+	}
+	// background-image: url(./../images/mainimage_large.jpg);
+	
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-position: top center;
+	// border-radius: 5px;
+
+	// justify-content: center;
+	//position: relative;
 
 	@include atLarge {
 		margin-bottom: 20px;
@@ -17,65 +31,88 @@
 	@include atLarger {
 		min-height: 1400px;
 	}
+
 }
 
 .intro-banner--textbox{
-	background-color: rgba(0,0,0,0.6);
+
 	text-align: center;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	height: 33%;
+	height: 100%;
+	// width: 100%;
+	// position: absolute;
+	// bottom: 0;
+	// height: 33%;
 
 	@include atLarge {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		left: 3em;
-		top: 3em;
-		bottom: auto;
-		width: 24em;
-		height: 24em;
-		border-radius: 50%;	
+		// left: 3em;
+		// top: 3em;
+		// bottom: auto;
+		// width: 24em;
+		// height: 24em;
+		// border-radius: 50%;	
 		padding: 60px;
 	}
 
 	@include atLarger {
-		left: 9em;
-		top: 10em;
-		width: 40em;
-		height: 40em;
+		// left: 9em;
+		// top: 10em;
+		// width: 40em;
+		// height: 40em;
 	}
 
 }
 
-.intro-text{
-	font-size: 1.4rem;
-	font-weight: 400;
-	line-height: 1.3;
-	color: $mainLight;
-	overflow: none;
-	width: 90%;
-	max-width: 550px;
-	margin: 0 auto;
-	padding: 1.3em 0;
+.intro-title{
+		// font-size: 1.4rem;
+		// font-weight: 400;
+		line-height: 1.3;
+		color: $mainLight;
+		overflow: none;
+		width: 90%;
+		max-width: 550px;
+		margin: 0 auto;
+		padding: 1.3em 0;
 
-	@include atLarge {
-		padding: 3px 1px 13px 1px;
-		text-align: center;
-		margin: 0 auto .9em auto;
-	}
+		@include atLarge {
+			padding: 3px 1px 13px 1px;
+			text-align: center;
+			margin: 0 auto .9em auto;
+		}
 
-	@include atLarger {
-		font-size: 2.5rem;
-	}
+		@include atLarger {
+			font-size: 2.5rem;
+		}
+
+
 }
+
+.intro-subtitle{
+		font-size: 1.5rem;
+		font-weight: 5500;
+		line-height: 1.5;
+		color: $mainLightMuted;
+		overflow: none;
+		width: 90%;
+		max-width: 550px;
+		margin: 0 auto;
+		padding-bottom: 1.3em;
+
+		@include atMedium{
+			font-size: 1.4rem;
+		}
+
+}
+
 
 .intro-banner--button {
 	font-weight: 600;
 	font-size: 1rem;
 	margin: 0;
+	color: #FFF;
 
 	a {
 		@include atLarger {

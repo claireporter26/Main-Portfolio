@@ -70,6 +70,7 @@
 	background-color: #FFF; 
 	min-height: 140px;
 	position: relative;
+	color:#FFF;
   }
 
   .card-textbox--title{
@@ -86,26 +87,26 @@
 	font-size: .8rem;
   }
 
-  .card-textbox--link{
-	font-size: 1rem;
-	font-weight: 300;
-	margin: 5px;
-	text-decoration: none;
-	color: $mainGreen;
-  }
+//   .card-textbox--link{
+// 	font-size: 1rem;
+// 	font-weight: 300;
+// 	margin: 5px;
+// 	text-decoration: none;
+// 	color: $mainCTA;
+//   }
 
-  .card-textbox--button {
-	border-radius: 10px;
-	border-width: 1px;
-	border-color: rgb(168, 168, 80);
-	padding: .2em .5em;
-	background-color: $mainGreen;
-	font-weight: bold;
-	font-size: 15px;
-	margin: .7em auto .7em 0;
-  }
+//   .card-textbox--button {
+// 	border-radius: 10px;
+// 	border-width: 1px;
+// 	border-color: rgb(168, 168, 80);
+// 	padding: .2em .5em;
+// 	background-color: $mainCTA;
+// 	font-weight: bold;
+// 	font-size: 15px;
+// 	margin: .7em auto .7em 0;
+//   }
 
 .card-textbox--link:hover{
-	color: black;
+	color: $mainLight;
 }
 

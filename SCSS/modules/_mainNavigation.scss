@@ -4,6 +4,9 @@
 	border-bottom: solid .1px $mainLight;
 	font-size: .8rem;
 	height: auto;
+	position: fixed;
+	top: 0;
+	background-color: $mainDark;;
 }
 
 .navItems {
@@ -43,15 +46,27 @@
 }
 
 .nav {
-	visibility: hidden;
-	width: 100%;
-	height: 0;
+	visibility: visible;
 	text-align: center;
 	font-size: .9rem;
+	// background-color: $mainDark;
+	// z-index: 1000;
+
 
 	@include atLarge {
 		visibility: visible;
 		width: auto;
+	}
+
+	&--visible {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1vw;
+		height: 1vh;
+		visibility: visible;
+		background-color: $mainDark;
+		z-index: 1000;
 	}
 }
 
@@ -61,7 +76,7 @@
 	margin: auto 0;
 
 	&:hover {
-	background-color: rgba($mainGreen, .8);
+	background-color: rgba($mainCTA, .8);
 
 		a {
 			color: $mainDark;
@@ -163,13 +178,13 @@
     opacity: .75;
 }
 
-.nav--visible {
-    visibility: visible;
-    height: auto;
-    position: relative;
-	display: block;
-	width: 100%;
-}
+// .nav--visible {
+//     visibility: visible;
+//     height: auto;
+//     position: relative;
+// 	display: block;
+// 	width: 100%;
+// }
 
 .hamburger {
     width: 50%;
