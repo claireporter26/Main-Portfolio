@@ -18,85 +18,48 @@
 
             <div class="navContainer">
                 <header class="group navItems">
-                        <nav class="site-nav">
+                        <div class="site-nav">
                             <div class="site-nav_small">
                                 <div class="brandContainer">
                                     <a class="brand" href="index.html">Claire Porter Web Development</a>
                                 </div>
-                                <button class="nav-toggle" aria-label="Toggle navigation">
+                                <button class="nav-toggle" aria-label="open navigation">
                                     <span class="hamburger"></span>
                                 </button>
                             </div>
-                            <div class="nav">
+                            <nav class="nav">
                                 <ul class="nav-right">
                                     <li class="nav-item active-nav"><a href="index.html">Home</a></li>
                                     <li class="nav-item"><a href="projects.html">Projects</a></li>
                                     <li class="nav-item"><a href="aboutme.html">About Me</a></li>
                                 </ul>
-                            </div>
-                        </nav> 
+                            </nav>
+                        </div> 
                 </header> 
             </div> 
             
-            <section class="intro-banner group">
-                <div class="intro-image">
-                    <img class="intro-image--photo" src="./images/mainimage_large_cropped.jpg" alt="Portrait of Claire Porter">
-                </div>
-                <div class="intro-banner--textbox">
-                    <div>
-                        <h1 class="intro-title">Hi! I'm Claire, a Software Engineer.
+ 
+
+            <div class="intro-banner group">
+                <div class="intro-banner--profileImage"> 
+                    <img src="images/mainimage_large.jpg" alt="Profile Image">
+                </div> 
+                <div class="intro-banner--textbox">         
+                        <h1 class="intro-text">Hi! I'm Claire - Senior software engineer.
                         </h1>
-                        <h3 class="intro-subtitle">I have experience with multiple CMS platforms and front end development for websites</h3>
-                    </div>
-                    <div>
-                        <a class="main-btn-design intro-banner--button" href="aboutme.html">Find out more about me!</a>
-                    </div>
+                        <p class="intro-subtext">I love enhancing the functionality and UX of websites using HTML, CSS and JavaScript. I currently work with in-house branding teams to help build new features on multiple CMS platforms, including providing improvements to the Analytics implementations.</p>
+                        <a class="card-textbox--link" href="aboutme.html">Find out more about me!</a>
+
+                    <!-- <div>
+                        <button class="main-btn-design intro-banner--button">
+                            <a class="card-textbox--link" href="aboutme.html">Find out more about me!</a>
+                        </button>
+                    </div> -->
                 </div>     
-            </section>
-            <section class="projects">
-                <h2 class="section-title">Recent Projects<a>See all projects</a></h2>
-                <div class="card-container">
-                    <a class="card_link" href="project_tictacttoe.html">
-                        <div class="card card_project">
-                            <img src="./images/tic-tac-toe_project.jpg">
-                            <div class="card-textbox">
-                                <h4 class="card-textbox--title">Tic Tac Toe Project</h4>
-                                <p class="card-textbox--subtitle">Design by Claire Porter</p>
-                                    <a class="main-btn-design project_btn-absolute card-textbox--link" href="project_tictacttoe.html">Take a closer look</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-container">
-                    <a class="card_link" href="project_photographfilterproject.html">
-                        <div class="card card_project">
-                            <img src="./images/img-amazing_photos_filter_project.jpg">
-                            <div class="card-textbox">
-                                <h4 class="card-textbox--title">Photograph Filter Project</h4>
-                                <p class="card-textbox--subtitle">Design by Claire Porter</p>
-                                    <a class="main-btn-design project_btn-absolute card-textbox--link" href="project_photographfilterproject.html">Take a closer look</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-container">
-                    <a class="card_link" href="project_todolist.html">
-                        <div class="card card_project">
-                            <img src="./images/todolist_project.jpg">
-                            <div class="card-textbox">
-                                <h4 class="card-textbox--title">To Do List Project</h4>
-                                <p class="card-textbox--subtitle">Design by Claire Porter</p>
-                                    <a class="main-btn-design project_btn-absolute card-textbox--link" href="project_todolist.html">Take a closer look</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
+            </div>
 
             
-            <!-- <div class="card-area group flexcard">
+            <div class="card-area group flexcard">
                 
                 <div class="card-container">
                     <a class="card_link" href="aboutme.html">
@@ -114,6 +77,23 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="card-container">
+                    <a class="card_link" href="projects.html">
+                        <div class="card card_project">
+                            <div class="card-image">
+                                <img src="images/projects.jpg">
+                            </div>
+                            <div class="card-textbox">
+                                <h4 class="card-textbox--title">My Projects</h4>
+                                <p class="card-textbox--subtitle">See what I can Create</p>
+                                <button class="main-btn-design project_btn-absolute">
+                                    <a class="card-textbox--link" href="projects.html">Projects</a>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
                 
                 <div class="card-container">
                     <a class="card_link" href="https://github.com/claireporter26">
@@ -131,7 +111,7 @@
                         </div>
                     </a>
                 </div>
-        </div> -->
+        </div>
           
         <footer class="footer group">
             <div>
@@ -144,6 +124,8 @@
         </footer>
 
         <script src="./JS/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <!-- https://glidejs.com/docs/setup/ -->
         
     </body>
 

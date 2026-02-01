@@ -12,8 +12,15 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 5em;
-            
         }
+
+        @include atLarger {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 5em; 
+        }
+
+
 
     &--flex {
 
@@ -24,7 +31,7 @@
     }
 
     &_btn {
-        background-color: $mainCTA;
+        background-color: $mainGreen;
         border: none;
         padding: .3em 1em;
         border-radius: 5px;
@@ -44,7 +51,7 @@
 	font-weight: 300;
 	margin: 5px;
 	text-decoration: none;
-    color: $mainCTA;
+    color: $mainGreen;
     }
 }
 

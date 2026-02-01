@@ -11,6 +11,12 @@
 }
 
 @mixin atLarger {
+    @media (min-width: 1700px){
+        @content;
+    }
+}
+
+@mixin atVeryLarge {
     @media (min-width: 3000px){
         @content;
     }

@@ -1,121 +1,144 @@
 .intro-banner{
-	background-color: $mainDark;
-	height: auto;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding: 7em 3em;
-
-	@include atMedium {
-		
-		margin-top: 0px;
-		flex-direction: row;
-		min-height: 600px;
-		
-		padding: 1em 3em;
-	}
 	// background-image: url(./../images/mainimage_large.jpg);
-	
+	// background-color: $mainLight;
 	// background-size: cover;
 	// background-repeat: no-repeat;
 	// background-position: top center;
-	// border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 0px;
+	height: auto;
+	min-height: 600px;
+	display: flex;
+	flex-direction: column;
 
-	// justify-content: center;
-	//position: relative;
+	
+	
+	// position: relative;
 
 	@include atLarge {
 		margin-bottom: 20px;
+		flex-direction: row-reverse;
+		padding: 50px 15px;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
-	@include atLarger {
+	@include atVeryLarge {
 		min-height: 1400px;
 	}
-
 }
 
-.intro-banner--textbox{
+.intro-banner--profileImage {
 
-	text-align: center;
-	height: 100%;
-	// width: 100%;
-	// position: absolute;
-	// bottom: 0;
-	// height: 33%;
+		border-radius: 5px;
+		width: 100%;
+		// min-width:50%;
+		height: auto;
+
+		@include atLarge {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			width: 450px;
+			height: 450px;
+			overflow:hidden;
+			border: 6px solid $mainLight;
+			margin: 60px;
+		}
+
+		img {
+			height: 100%;
+
+			@include atLarge {
+				object-fit: cover;
+
+			}
+
+			@include atVeryLarge {
+				width: auto;
+				height: 100%;
+			}
+
+		}
+	}
+
+.intro-banner--textbox{
+	// background-color: rgba(0,0,0,0.6);
+	text-align: left;
+	width: 100%;
+	height: 33%;
+	color: $mainLight;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
 
 	@include atLarge {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: left;
 		flex-direction: column;
-		// left: 3em;
-		// top: 3em;
-		// bottom: auto;
-		// width: 24em;
-		// height: 24em;
+		left: 3em;
+		top: 3em;
+		bottom: auto;
+		width: 80%;
+		height: 100%;
+		max-width: 50%;
 		// border-radius: 50%;	
 		padding: 60px;
 	}
 
-	@include atLarger {
-		// left: 9em;
-		// top: 10em;
-		// width: 40em;
-		// height: 40em;
+	@include atVeryLarge {
+		left: 9em;
+		top: 10em;
+		width: 40em;
+		height: 40em;
 	}
 
 }
 
-.intro-title{
-		// font-size: 1.4rem;
-		// font-weight: 400;
-		line-height: 1.3;
-		color: $mainLight;
-		overflow: none;
-		width: 90%;
-		max-width: 550px;
-		margin: 0 auto;
-		padding: 1.3em 0;
+.intro-text{
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.3;
+	color: $mainLight;
+	overflow: none;
+	width: 90%;
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
 
-		@include atLarge {
-			padding: 3px 1px 13px 1px;
-			text-align: center;
-			margin: 0 auto .9em auto;
-		}
+	@include atLarge {
+		font-size: 2rem;
+		padding: 0 1px 13px 1px;
+		text-align: left;
+		margin: 0;
+	}
 
-		@include atLarger {
-			font-size: 2.5rem;
-		}
-
-
+	@include atVeryLarge {
+		font-size: 2.5rem;
+	}
 }
 
-.intro-subtitle{
-		font-size: 1.5rem;
-		font-weight: 5500;
-		line-height: 1.5;
-		color: $mainLightMuted;
-		overflow: none;
-		width: 90%;
-		max-width: 550px;
-		margin: 0 auto;
-		padding-bottom: 1.3em;
+.intro-subtext{
+	font-size: 1rem;
+	line-height: 1.5;
+	width: 90%;
+	text-align: center;
 
-		@include atMedium{
-			font-size: 1.4rem;
-		}
-
+	@include atLarge {
+		font-size: 1.4rem;
+		text-align: left;
+	}
 }
-
 
 .intro-banner--button {
 	font-weight: 600;
 	font-size: 1rem;
 	margin: 0;
-	color: #FFF;
 
 	a {
-		@include atLarger {
+		@include atVeryLarge {
 			font-size: 1.7rem;
 		}
 	}

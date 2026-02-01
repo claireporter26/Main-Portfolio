@@ -1,8 +1,9 @@
-body, html{	
+body, html{
+	background-color: $mainDark;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	font-family: 'Inter', 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -10,8 +11,6 @@ html {
 }
 
 body {
-	background-color: $mainDark;
-	color: $mainLight;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -31,38 +30,21 @@ img {
 }
 
 .main-btn-design {
-	background-color: $mainCTA;
-	color: #ffffff;
+	background-color: $mainGreen;
 	border: none;
-	padding: 0.6rem 1.2rem;
-	border-radius: 8px;
-	cursor: pointer;
-	font-weight: 600;
-	transition: background-color 0.2s ease;
-
+	padding: .4em .6em;
+	border-radius: 5px;
 
 	&:hover {
-		background-color: $mainCTAHover;
+		background-color: rgba($mainGreen, .85);
+	}
+
+	a {
+		color: $mainDark;
+		font-weight: 600;
 	}
 }
 
-a {
-	color: $mainSecondary;
-	font-weight: 600;
-	text-decoration: none;
-
-	&:hover {
-		color: $mainSecondaryHover;
-	}
-}
-
-.section {
-
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-
-	@include atLarge {
-		align-items: center;
-	}
+.page-link--green {
+	color: rgba($mainGreen, .7);
 }
