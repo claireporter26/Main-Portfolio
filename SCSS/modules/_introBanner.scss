@@ -123,7 +123,8 @@
 .intro-subtext{
 	font-size: 1rem;
 	line-height: 1.5;
-	width: 90%;
+	max-width: 550px;
+	margin: 1em auto;
 	text-align: center;
 
 	@include atLarge {
@@ -142,4 +143,10 @@
 			font-size: 1.7rem;
 		}
 	}
+}
+
+#homepage-carousel {
+  background-color: rgb(255, 238, 210);
+  margin: 1.5em 0 1.5em 0;
+  width: 100%;
 }

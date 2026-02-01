@@ -1,0 +1,23 @@
+{
+  "name": "main-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/claireporter26/Main-Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/claireporter26/Main-Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claireporter26/Main-Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.7.1"
+  }
+}
